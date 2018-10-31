@@ -17,6 +17,18 @@ html {
     text-rendering: optimizeLegibility;
 }
 
+.clearfix {
+    zoom: 1;
+}
+
+.clearfix:after {
+    content: " ";
+    clear: both;    
+    display: block;
+    visibility: hidden;
+    height: 0;
+}
+
 /********************************************/
 /************REUSABLE COMPONENTS*************/
 /********************************************/
@@ -28,6 +40,7 @@ html {
 
 section {
     padding: 80px 0;
+    overflow: hidden;
 }
 
 .box {
@@ -81,6 +94,7 @@ header {
     background-size: cover;
     background-position: center;
     height: 100vh;
+    background-attachment: fixed;
 }
 
 .hero-text-box {
@@ -136,6 +150,34 @@ header {
     color: #e67e22;
     display: block;
     margin-bottom: 10px;
+}
+
+.icon-small {
+    color: #e67e22;
+    display: inline-block;
+    font-size: 120%;
+    margin-bottom: -5px;
+    line-height: 120%;
+    margin-right: 15px;
+    text-align: center;
+    width: 30px;
+    vertical-align: middle;
+}
+
+/******************LINKS*******************/
+a:link,
+a:visited {
+    color: #e67e22;
+    text-decoration: none;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #e67e22;
+    transition: border-bottom 0.2s, color 0.2s;
+}
+
+a:hover,
+a:active {
+    color: #555;
+    border-bottom: 1px solid transparent;
 }
 
 /*****************PARAGRAPHS*****************/
@@ -198,6 +240,10 @@ header {
 }
 
 /******************MEALS*******************/
+.section-meals {
+    padding: 0;
+}
+
 .meals-showcase {
     list-style: none;
     width: 100%;
@@ -228,4 +274,102 @@ header {
 .meal-photo img:hover {
     transform: scale(1.03);
     opacity: 1;
+}
+
+/******************STEPS*******************/
+.section-steps {
+    background-color: #f4f4f4;
+}
+
+.iPhone {
+    text-align: right;
+    padding-right: 3%;
+    margin-top: 30px; 
+}
+
+.steps-box {
+    margin-top: 70px;
+    padding-left: 3%;
+}
+
+.app-screen {
+    width: 40%;
+}
+
+.works-steps {
+    margin-bottom: 50px;
+}
+
+.last{
+    margin-bottom: 80px;
+}
+
+.app-btn:link,
+.app-btn:visited {
+    border-bottom: 0;
+}
+
+.works-steps div {
+    font-size: 150%;
+    padding: 5px;
+    float: left;
+    text-align: center;
+    border: 2px solid #e67e22;
+    color: #e67e22;
+    display: inline-block;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    margin-right: 25px;
+}
+
+.app-btn img {
+    height: 50px;
+    width: auto;
+    margin-right: 10px;
+}
+
+/******************CITIES*******************/
+.box img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+/***************TESTIMONIALS****************/
+.section-testimonials {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)) ,url(./img/back-customers.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    color: #ffffff;
+}
+
+blockquote {
+    margin-top: 40px;
+    font-style: italic;
+    line-height: 145%;
+    padding: 3%;
+    position: relative;
+}
+
+blockquote::before {
+    content: "\201C";
+    font-size: 400%;
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+}
+
+cite {
+    display: block;
+    font-size: 90%;
+    padding-top: 25px;
+}
+
+cite img {
+    height: 45px;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 10px;
 }
