@@ -2,9 +2,12 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale= 1.0">
+
         <link rel="stylesheet" type="text/css" href="./vendors/css/normalize.css">
         <link rel="stylesheet" type="text/css" href="./vendors/css/grid.css">
         <link rel="stylesheet" type="text/css" href="./vendors/css/ionicons.min.css">
+        <link rel="stylesheet" type="text/css" href="./vendors/css/animate.css">
         <link rel="stylesheet" href="./resources/css/style.css">
         <link type="text/css" href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
         <title>Omnifood</title>
@@ -15,31 +18,32 @@
             <nav>
                 <div class="row">
                     <img src="./resources/img/logo-white.png" alt="Omnifood logo" class="logo">
+                    <img src="./resources/img/logo.png" alt="Omnifood logo" class="logo-black">
                     <ul class="main-nav">
-                        <li><a href="#">Food Delivery</a></li>
-                        <li><a href="#">How it works</a></li>
-                        <li><a href="#">Our Cities</a></li>
-                        <li><a href="#">Sign up</a></li>
+                        <li><a href="#features">Food Delivery</a></li>
+                        <li><a href="#works">How it works</a></li>
+                        <li><a href="#cities">Our Cities</a></li>
+                        <li><a href="#plans">Sign up</a></li>
                     </ul>
                 </div>
 
             </nav>
-            <div class="hero-text-box">
+            <div class="hero-text-box" id="home">
                 <h1>Goodbye junk food.<br>Hello super healthy meals.</h1>
-                <a class="btn btn-full" href="#">I’m hungry</a>
-                <a class="btn btn-ghost" href="#">Show me more</a>
+                <a class="btn btn-full" href="#plans">I’m hungry</a>
+                <a class="btn btn-ghost" href="#features">Show me more</a>
             </div>
         </header>
         
-        <section class="section-features">
+        <section class="section-features js-section-features" id="features">
             <div class="row">
                 <h2>Get food fast &mdash; not fast food</h2>
                 <p class="long-copy">
-                    Hello, we’re Omnifood, your new premium food delivery service. We know you’re always<br> busy. No time for cooking. So let us take care of that, we’re really good at it, we promise!
+                    Hello, we’re Omnifood, your new premium food delivery service. We know you’re always busy. No time for cooking. So let us take care of that, we’re really good at it, we promise!
                 </p>
             </div>
 
-            <div class="row">
+            <div class="row js-wp-1">
                 <div class="col span_1_of_4 box">
                     <i class="ion-ios-infinite-outline icon-big"></i>
                     <h3>Up to 365 days/year</h3>
@@ -63,7 +67,7 @@
             </div>
         </section>
 
-        <section class="section-meals">
+        <section class="section-meals js-section-meals">
             <ul class="meals-showcase clearfix">
                 <li>
                     <figure class="meal-photo">
@@ -110,13 +114,13 @@
             </ul>
         </section>
 
-        <section class="section-steps">
+        <section class="section-steps js-section-steps" id="works">
             <div class="row">
                 <h2>How it works &mdash; Simple as 1, 2, 3</h2>
             </div>
             <div class="row">
                 <div class="col span_1_of_2 iPhone">
-                    <img src="./resources//img/app-iPhone.png" alt="Omnifood App on iPhone" class="app-screen">
+                    <img src="./resources//img/app-iPhone.png" alt="Omnifood App on iPhone" class="app-screen js-wp-2">
                 </div>
                 <div class="col span_1_of_2 steps-box">
                     <div class="works-steps">
@@ -137,11 +141,11 @@
             </div>
         </section>
 
-        <section class="section-cities">
+        <section class="section-cities js-section-cities" id="cities">
             <div class="row">
                 <h2>We're currently in these cities</h2>
             </div>
-            <div class="row">
+            <div class="row js-wp-3">
                 <div class="col span_1_of_4 box">
                     <img src="./resources/img/lisbon-3.jpg" alt="Lisbon">
                     <h3>Lisbon</h3>
@@ -209,7 +213,7 @@
             </div>
         </section>
 
-        <section class="section-testimonials">
+        <section class="section-testimonials js-section-testimonials">
             <div class="row">
                 <h2>Our customers can't live without us</h2>
             </div>
@@ -232,14 +236,14 @@
             </div>
         </section>
 
-        <section class="section-plans">
+        <section class="section-plans js-section-plans" id="plans">
             <div class="row">
                 <h2>Start eating healthy today</h2>
             </div>
 
             <div class="row">
                 <div>
-                    <div class="col span_1_of_3">
+                    <div class="col span_1_of_3 js-wp-4">
                         <div class="plan-box">
                             <div>
                                 <h3>Premium</h3>
@@ -303,7 +307,7 @@
             </div>
         </section>
 
-        <section class="contact">
+        <section class="section-contact js-section-contact">
             <div class="row">
                 <h2>We're happy to hear from you</h2>
             </div>
@@ -390,5 +394,9 @@
                 <p>Copyright &copy; 2018 by Esther. All rights reserved.</p>
             </div>
         </footer>
+
+        <script src="./vendors/js/jquery-3.3.1.min.js"></script>
+        <script src="./vendors/js/jquery.waypoints.min.js"></script>
+        <script src="./resources/js/app.js"></script>
     </body>
 </html>
