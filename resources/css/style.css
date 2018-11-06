@@ -92,8 +92,8 @@ h3 {
 /*******************HEADER*******************/
 
 header {
-    background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(0, 0, 0, 0.7)),to(rgba(0, 0, 0, 0.7))), url(img/hero.jpg);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(img/hero.jpg);
+    background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(0, 0, 0, 0.7)),to(rgba(0, 0, 0, 0.7))), url(img/hero-min.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(img/hero-min.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -156,6 +156,19 @@ header {
 .main-nav li a:hover,
 .main-nav li a:active{
     border-bottom: 2px solid #e67e22;
+}
+
+/*********MOBILE NAV**********/
+.mobile-nav-icon {
+    float: right;
+    margin-top: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-nav-icon i {
+    font-size: 200%;
+    color: #fff;
 }
 
 /***********STICKY NAV***************/
@@ -387,8 +400,8 @@ input[type = submit]:active {
 
 /***************TESTIMONIALS****************/
 .section-testimonials {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8))) ,url(./img/back-customers.jpg);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)) ,url(./img/back-customers.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8))) ,url(./img/back-customers-min.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)) ,url(./img/back-customers-min.jpg);
     background-size: cover;
     background-attachment: fixed;
     color: #ffffff;
@@ -636,6 +649,36 @@ footer p {
     .col {width: 100%; margin: 0 0 4% 0}
     .app-screen{width: 40%;}
     .main-nav{display: none;}
+    .main-nav{
+        float: left;
+        margin-top: 35px;
+        margin-left: 25px;
+    }
+    .main-nav li{
+        display: block;
+    }
+
+    .main-nav li a:link,
+    .main-nav li a:visited {
+        display: block;
+        border: 0;
+        padding: 10px 0;
+        font-size: 1005;
+    }
+
+    .sticky .main-nav {margin-top: 10px;}
+
+    .sticky .main-nav li a:link,
+    .sticky .main-nav li a:visited{
+        padding: 10px 0;
+        color: #555;
+    }
+    .sticky .mobile-nav-icon i {margin-top: 10px}
+    .sticky .mobile-nav-icon i {color: #555}
+
+    .mobile-nav-icon {
+        display: block;
+    }
 
     h1{font-size: 180%;}
     h2 {font-size: 150%;}

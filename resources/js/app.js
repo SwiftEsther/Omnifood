@@ -56,4 +56,15 @@ $(document).ready(function() {
         }
     }
     });
+
+    $('.mobile-nav-icon').click(function() {
+        $('.main-nav').slideToggle(200);
+        if($('.mobile-nav-icon i').hasClass('ion-navicon-round')){
+            $('.mobile-nav-icon i').addClass('ion-close-round');
+            $('.mobile-nav-icon i').removeClass('ion-navicon-round');
+        } else {
+            $('.mobile-nav-icon i').removeClass('ion-close-round');
+            $('.mobile-nav-icon i').addClass('ion-navicon-round');
+        }
+    })
 });
