@@ -66,5 +66,21 @@ $(document).ready(function() {
             $('.mobile-nav-icon i').removeClass('ion-close-round');
             $('.mobile-nav-icon i').addClass('ion-navicon-round');
         }
-    })
+    });
+
+    var map = new GMaps({
+        div: '.map',
+        lat: 6.5513242,
+        lng: 3.3380552,
+        zoom: 12
+    });
+
+    map.addMarker({
+        lat: 6.5513242,
+        lng: 3.2380552,
+        title: 'Lagos',
+        infoWindow: {
+            content: '<p>Esther currently lives in Lagos</p>'
+        }
+      });
 });

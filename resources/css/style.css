@@ -489,7 +489,7 @@ cite img {
 
 /***************CONTACT FORM****************/
 .contact-form {
-    width: 60%;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -516,6 +516,29 @@ textarea {
 }
 
 *:focus{outline: none}
+
+.map-box {
+    width: 100%;
+    height: 560px;
+    position: relative;
+}
+
+.map {
+    width: 100%;
+    height: 560px;
+    z-index: 0;
+    position: relative;
+}
+
+.form-box {
+    width: 50%;
+    height: 560px;
+    padding-top: 40px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+}
 
 /****************FOOTER*****************/
 footer {
@@ -636,7 +659,7 @@ footer p {
     }
 
     .plan-price {font-size: 250%;}
-    .contact-form {width: 80%}
+    .contact-form {width: 90%}
 }
 
 /* Small phones to small tablets: from 481px to 767px */
@@ -697,6 +720,27 @@ footer p {
 
     .works-steps{margin-bottom: 20px;}
     .last{margin-bottom: 20px;}
+
+    .map-box {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    
+    .map {
+        width: 100%;
+        height: 300px;
+        z-index: 0;
+        position: relative; 
+    }
+    
+    .form-box {
+        width: 100%;
+        height: auto;
+        padding: 30px 0;
+        position: relative;
+        display: inline-block;
+    }
 }
 
 /* Small phones: from 0 to 480px */
